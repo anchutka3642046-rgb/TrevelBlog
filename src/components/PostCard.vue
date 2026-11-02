@@ -1,5 +1,5 @@
 <template>
-  <div class="post-card">
+  <router-link :to="`/posts/${post.id}`" class="post-card">    
     <div class="post-card__image-wrap">
        <img
         :src="getImageUrl(post.photo)"
@@ -16,7 +16,7 @@
         Подробнее →
       </router-link>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script setup lang="ts">
